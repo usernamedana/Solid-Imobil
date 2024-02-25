@@ -7,9 +7,9 @@ function popUp(oferta) {
     if (oferta == 1) {
       document.querySelector(".pop-up-img-1").src = "../popupimagini/img1.1.jpg";
       document.querySelector(".pop-up-img-2").src = "../popupimagini/img1.2.jpg";
-      document.querySelector(".pop-up-img-3").src = "../popupimagini/img1.3.jpg";
-      document.querySelector(".pop-up-img-4").src = "../popupimagini/img1.4.jpg";
-      document.querySelector(".pop-up-img-5").src = "../popupimagini/img1.5.jpg";
+      document.querySelector(".pop-up-img-3").style.display = "none";
+      document.querySelector(".pop-up-img-4").style.display = "none";
+      document.querySelector(".pop-up-img-5").style.display = "none";
       document.querySelector(".pop-up-img-6").style.display = "none";
       document.querySelector(".pop-up-img-7").style.display = "none";
       document.querySelector(".pop-up-img-8").style.display = "none";
@@ -22,15 +22,11 @@ function popUp(oferta) {
       document.querySelector(".adresa-js").innerHTML =
         "Adresa: str. Podul de Flori";
     } else if (oferta == 2) {
-      document.querySelector(".pop-up-photos").style.height = "19vh";
-      document.querySelector(".pop-up-photos").style.gap = "1%";
-      document.querySelector(".pop-up-photos").style.gap = "1%";
-      document.querySelector(".pop-up-photos img").style.width = "15%";
       document.querySelector(".pop-up-img-1").src = "../popupimagini/img2.1.jpg";
       document.querySelector(".pop-up-img-2").src = "../popupimagini/img2.2.jpg";
-      document.querySelector(".pop-up-img-3").src = "../popupimagini/img2.3.jpg";
-      document.querySelector(".pop-up-img-4").src = "../popupimagini/img2.4.jpg";
-      document.querySelector(".pop-up-img-5").src = "../popupimagini/img2.5.jpg";
+      document.querySelector(".pop-up-img-3").style.display = "none";
+      document.querySelector(".pop-up-img-4").style.display = "none";
+      document.querySelector(".pop-up-img-5").style.display = "none";
       document.querySelector(".pop-up-img-6").style.display = "none";
       document.querySelector(".pop-up-img-7").style.display = "none";
       document.querySelector(".pop-up-img-8").style.display = "none";
@@ -42,10 +38,6 @@ function popUp(oferta) {
       document.querySelector(".price-js").innerHTML = "SUPER OFERTĂ!!! ";
       document.querySelector(".adresa-js").innerHTML = " ";
     } else if (oferta == 3) {
-      document.querySelector(".pop-up-photos").style.height = "19vh";
-      document.querySelector(".pop-up-photos").style.gap = "1%";
-      document.querySelector(".pop-up-photos").style.gap = "1%";
-      document.querySelector(".pop-up-photos img").style.width = "15%";
       document.querySelector(".pop-up-img-1").src = "../popupimagini/img3.0.jpg";
       document.querySelector(".pop-up-img-2").src = "../popupimagini/img3.1.jpg";
       document.querySelector(".pop-up-img-3").style.display = "none";
@@ -62,15 +54,12 @@ function popUp(oferta) {
       document.querySelector(".price-js").innerHTML = "Preț: 10 000 €";
       document.querySelector(".adresa-js").innerHTML = "Adresa: str. Cîmpiilor";
     } else if (oferta == 4) {
-      document.querySelector(".pop-up-photos").style.height = "19vh";
-      document.querySelector(".pop-up-photos").style.gap = "1%";
-      document.querySelector(".pop-up-photos").style.gap = "1%";
-      document.querySelector(".pop-up-photos img").style.width = "15%";
       document.querySelector(".pop-up-img-1").style.display = "none";
       document.querySelector(".pop-up-img-2").src = "../popupimagini/img4.0.jpg";
       document.querySelector(".pop-up-img-3").src = "../popupimagini/img4.1.jpg";
-      document.querySelector(".pop-up-img-4").src = "../popupimagini/img4.2.jpg";
-      document.querySelector(".pop-up-img-5").src = "../popupimagini/img4.3.jpg";
+      document.querySelector(".pop-up-img-3").style.display = "none";
+      document.querySelector(".pop-up-img-4").style.display = "none";
+      document.querySelector(".pop-up-img-5").style.display = "none";
       document.querySelector(".pop-up-img-6").style.display = "none";
       document.querySelector(".pop-up-img-7").style.display = "none";
       document.querySelector(".pop-up-img-8").style.display = "none";
@@ -82,14 +71,11 @@ function popUp(oferta) {
       document.querySelector(".price-js").innerHTML = "Preț : 20 500 €";
       document.querySelector(".adresa-js").innerHTML = "Adresa: str. Unirii";
     } else if (oferta == 5) {
-      document.querySelector(".pop-up-photos").style.height = "19vh";
-      document.querySelector(".pop-up-photos").style.gap = "1%";
-      document.querySelector(".pop-up-photos").style.gap = "1%";
-      document.querySelector(".pop-up-photos img").style.width = "15%";
       document.querySelector(".pop-up-img-4").style.display = "none";
       document.querySelector(".pop-up-img-1").src = "../popupimagini/img5.1.jpg";
       document.querySelector(".pop-up-img-2").src = "../popupimagini/img5.2.jpg";
-      document.querySelector(".pop-up-img-3").src = "../popupimagini/img5.3.jpg";
+      document.querySelector(".pop-up-img-3").style.display = "none";
+      document.querySelector(".pop-up-img-4").style.display = "none";
       document.querySelector(".pop-up-img-5").style.display = "none";
       document.querySelector(".pop-up-img-6").style.display = "none";
       document.querySelector(".pop-up-img-7").style.display = "none";
@@ -103,18 +89,14 @@ function popUp(oferta) {
       document.querySelector(".adresa-js").innerHTML =
         "Adresa: str. Podul de Flori";
     } else if (oferta == 6) {
-      document.querySelector(".pop-up-photos").style.height = "19vh";
-      document.querySelector(".pop-up-photos").style.gap = "1%";
-      document.querySelector(".pop-up-photos").style.gap = "1%";
-      document.querySelector(".pop-up-photos img").style.width = "15%";
       document.querySelector(".pop-up-img-1").src = "../popupimagini/img6.1.jpg";
       document.querySelector(".pop-up-img-2").src = "../popupimagini/img6.2.jpg";
-      document.querySelector(".pop-up-img-3").src = "../popupimagini/img6.3.jpg";
-      document.querySelector(".pop-up-img-4").src = "../popupimagini/img6.4.jpg";
-      document.querySelector(".pop-up-img-5").src = "../popupimagini/img6.5.jpg";
-      document.querySelector(".pop-up-img-6").src = "../popupimagini/img6.6.jpg";
-      document.querySelector(".pop-up-img-7").src = "../popupimagini/img6.7.jpg";
-      document.querySelector(".pop-up-img-8").src = "../popupimagini/img6.8.jpg";
+      document.querySelector(".pop-up-img-3").style.display = "none";
+      document.querySelector(".pop-up-img-4").style.display = "none";
+      document.querySelector(".pop-up-img-5").style.display = "none";
+      document.querySelector(".pop-up-img-6").style.display = "none";
+      document.querySelector(".pop-up-img-7").style.display = "none";
+      document.querySelector(".pop-up-img-8").style.display = "none";
       document.querySelector(".pop-up-img-9").style.display = "none";
       document.querySelector(".pop-up-img-10").style.display = "none";
       document.querySelector(".main-txt-js").innerHTML =
@@ -123,10 +105,6 @@ function popUp(oferta) {
       document.querySelector(".price-js").innerHTML = "Preț: 75 000 €";
       document.querySelector(".adresa-js").innerHTML = " ";
     } else if (oferta == 7) {
-      document.querySelector(".pop-up-photos").style.height = "19vh";
-      document.querySelector(".pop-up-photos").style.gap = "1%";
-      document.querySelector(".pop-up-photos").style.gap = "1%";
-      document.querySelector(".pop-up-photos img").style.width = "15%";
       document.querySelector(".pop-up-img-1").src = "../popupimagini/img7.0.jpg";
       document.querySelector(".pop-up-img-2").src = "../popupimagini/img7.1.jpg";
       document.querySelector(".pop-up-img-3").style.display = "none";
@@ -143,10 +121,6 @@ function popUp(oferta) {
       document.querySelector(".price-js").innerHTML = "Preț: 6200 €";
       document.querySelector(".adresa-js").innerHTML = " ";
     } else if (oferta == 8) {
-      document.querySelector(".pop-up-photos").style.height = "19vh";
-      document.querySelector(".pop-up-photos").style.gap = "1%";
-      document.querySelector(".pop-up-photos").style.gap = "1%";
-      document.querySelector(".pop-up-photos img").style.width = "15%";
       document.querySelector(".pop-up-img-1").src = "../popupimagini/img8.0.jpg";
       document.querySelector(".pop-up-img-2").src = "../popupimagini/img8.1.jpg";
       document.querySelector(".pop-up-img-3").style.display = "none";
@@ -164,10 +138,6 @@ function popUp(oferta) {
       document.querySelector(".adresa-js").innerHTML =
         "Adresa: str. Constantin Stere";
     } else if (oferta == 9) {
-      document.querySelector(".pop-up-photos").style.height = "19vh";
-      document.querySelector(".pop-up-photos").style.gap = "1%";
-      document.querySelector(".pop-up-photos").style.gap = "1%";
-      document.querySelector(".pop-up-photos img").style.width = "15%";
       document.querySelector(".pop-up-img-1").src = "../popupimagini/img9.0.jpg";
       document.querySelector(".pop-up-img-2").src = "../popupimagini/img9.1.jpg";
       document.querySelector(".pop-up-img-3").style.display = "none";
@@ -185,15 +155,11 @@ function popUp(oferta) {
       document.querySelector(".adresa-js").innerHTML =
         "Adresa: str. Liviu Damian";
     } else if (oferta == 10) {
-      document.querySelector(".pop-up-photos").style.height = "19vh";
-      document.querySelector(".pop-up-photos").style.gap = "1%";
-      document.querySelector(".pop-up-photos").style.gap = "1%";
-      document.querySelector(".pop-up-photos img").style.width = "15%";
       document.querySelector(".pop-up-img-1").src = "../popupimagini/img10.1.jpg";
       document.querySelector(".pop-up-img-2").src = "../popupimagini/img10.2.jpg";
-      document.querySelector(".pop-up-img-3").src = "../popupimagini/img10.3.jpg";
-      document.querySelector(".pop-up-img-4").src = "../popupimagini/img10.4.jpg";
-      document.querySelector(".pop-up-img-5").src = "../popupimagini/img10.5.jpg";
+      document.querySelector(".pop-up-img-3").style.display = "none";
+      document.querySelector(".pop-up-img-4").style.display = "none";
+      document.querySelector(".pop-up-img-5").style.display = "none";
       document.querySelector(".pop-up-img-6").style.display = "none";
       document.querySelector(".pop-up-img-7").style.display = "none";
       document.querySelector(".pop-up-img-8").style.display = "none";
@@ -206,10 +172,6 @@ function popUp(oferta) {
       document.querySelector(".adresa-js").innerHTML =
         "Adresa: sat. Hănășenii Noi, raionul Leova";
     } else if (oferta == 11) {
-      document.querySelector(".pop-up-photos").style.height = "19vh";
-      document.querySelector(".pop-up-photos").style.gap = "1%";
-      document.querySelector(".pop-up-photos").style.gap = "1%";
-      document.querySelector(".pop-up-photos img").style.width = "15%";
       document.querySelector(".pop-up-img-1").src = "../popupimagini/img11.0.jpg";
       document.querySelector(".pop-up-img-2").src = "../popupimagini/img11.1.jpg";
       document.querySelector(".pop-up-img-3").style.display = "none";
@@ -225,18 +187,14 @@ function popUp(oferta) {
       document.querySelector(".price-js").innerHTML = "Preț: 3500 €";
       document.querySelector(".adresa-js").innerHTML = " ";
     } else if (oferta == 12) {
-      document.querySelector(".pop-up-photos").style.height = "19vh";
-      document.querySelector(".pop-up-photos").style.gap = "1%";
-      document.querySelector(".pop-up-photos").style.gap = "1%";
-      document.querySelector(".pop-up-photos img").style.width = "15%";
       document.querySelector(".pop-up-img-1").src = "../popupimagini/img12.1.jpg";
       document.querySelector(".pop-up-img-2").src = "../popupimagini/img12.2.jpg";
-      document.querySelector(".pop-up-img-3").src = "../popupimagini/img12.3.jpg";
-      document.querySelector(".pop-up-img-4").src = "../popupimagini/img12.4.jpg";
-      document.querySelector(".pop-up-img-5").src = "../popupimagini/img12.5.jpg";
-      document.querySelector(".pop-up-img-6").src = "../popupimagini/img12.6.jpg";
-      document.querySelector(".pop-up-img-7").src = "../popupimagini/img12.7.jpg";
-      document.querySelector(".pop-up-img-8").src = "../popupimagini/img12.8.jpg";
+      document.querySelector(".pop-up-img-3").style.display = "none";
+      document.querySelector(".pop-up-img-4").style.display = "none";
+      document.querySelector(".pop-up-img-5").style.display = "none";
+      document.querySelector(".pop-up-img-6").style.display = "none";
+      document.querySelector(".pop-up-img-7").style.display = "none";
+      document.querySelector(".pop-up-img-8").style.display = "none";
       document.querySelector(".pop-up-img-9").style.display = "none";
       document.querySelector(".pop-up-img-10").style.display = "none";
       document.querySelector(".main-txt-js").innerHTML =
@@ -246,10 +204,6 @@ function popUp(oferta) {
       document.querySelector(".adresa-js").innerHTML =
         "Adresa: str. M. Sadoveanu";
     } else if (oferta == 13) {
-      document.querySelector(".pop-up-photos").style.height = "19vh";
-      document.querySelector(".pop-up-photos").style.gap = "1%";
-      document.querySelector(".pop-up-photos").style.gap = "1%";
-      document.querySelector(".pop-up-photos img").style.width = "15%";
       document.querySelector(".pop-up-img-1").src = "../popupimagini/img13.0.jpg";
       document.querySelector(".pop-up-img-2").style.display = "none";
       document.querySelector(".pop-up-img-3").style.display = "none";
@@ -267,10 +221,6 @@ function popUp(oferta) {
       document.querySelector(".adresa-js").innerHTML =
         "Adresa: str. Dimitrie Cantemir";
     } else if (oferta == 14) {
-      document.querySelector(".pop-up-photos").style.height = "19vh";
-      document.querySelector(".pop-up-photos").style.gap = "1%";
-      document.querySelector(".pop-up-photos").style.gap = "1%";
-      document.querySelector(".pop-up-photos img").style.width = "15%";
       document.querySelector(".pop-up-img-1").src = "../popupimagini/img14.0.jpg";
       document.querySelector(".pop-up-img-2").src = "../popupimagini/img14.1.jpg";
       document.querySelector(".pop-up-img-3").style.display = "none";
@@ -287,10 +237,6 @@ function popUp(oferta) {
       document.querySelector(".price-js").innerHTML = "Preț : 9000 €";
       document.querySelector(".adresa-js").innerHTML = " ";
     } else if (oferta == 15) {
-      document.querySelector(".pop-up-photos").style.height = "19vh";
-      document.querySelector(".pop-up-photos").style.gap = "1%";
-      document.querySelector(".pop-up-photos").style.gap = "1%";
-      document.querySelector(".pop-up-photos img").style.width = "15%";
       document.querySelector(".pop-up-img-1").src = "../popupimagini/img15.0.jpg";
       document.querySelector(".pop-up-img-2").src = "../popupimagini/img15.1.jpg";
       document.querySelector(".pop-up-img-3").style.display = "none";
@@ -308,10 +254,6 @@ function popUp(oferta) {
       document.querySelector(".adresa-js").innerHTML =
         "Adresa: str. Petru Dudnic.";
     } else if (oferta == 16) {
-      document.querySelector(".pop-up-photos").style.height = "19vh";
-      document.querySelector(".pop-up-photos").style.gap = "1%";
-      document.querySelector(".pop-up-photos").style.gap = "1%";
-      document.querySelector(".pop-up-photos img").style.width = "15%";
       document.querySelector(".pop-up-img-1").src = "../popupimagini/img16.0.jpg";
       document.querySelector(".pop-up-img-2").src = "../popupimagini/img16.1.jpg";
       document.querySelector(".pop-up-img-3").style.display = "none";
@@ -329,10 +271,6 @@ function popUp(oferta) {
       document.querySelector(".adresa-js").innerHTML =
         "Adresa: str. Mihai Eminescu";
     } else if (oferta == 17) {
-      document.querySelector(".pop-up-photos").style.height = "19vh";
-      document.querySelector(".pop-up-photos").style.gap = "1%";
-      document.querySelector(".pop-up-photos").style.gap = "1%";
-      document.querySelector(".pop-up-photos img").style.width = "15%";
       document.querySelector(".pop-up-img-1").src = "../popupimagini/img17.0.jpg";
       document.querySelector(".pop-up-img-2").style.display = "none";
       document.querySelector(".pop-up-img-3").style.display = "none";
@@ -349,10 +287,6 @@ function popUp(oferta) {
       document.querySelector(".price-js").innerHTML = "Preț : 10 000 €";
       document.querySelector(".adresa-js").innerHTML = " ";
     } else if (oferta == 18) {
-      document.querySelector(".pop-up-photos").style.height = "19vh";
-      document.querySelector(".pop-up-photos").style.gap = "1%";
-      document.querySelector(".pop-up-photos").style.gap = "1%";
-      document.querySelector(".pop-up-photos img").style.width = "15%";
       document.querySelector(".pop-up-img-1").src = "../popupimagini/img18.0.jpg";
       document.querySelector(".pop-up-img-2").style.display = "none";
       document.querySelector(".pop-up-img-3").style.display = "none";
@@ -369,10 +303,6 @@ function popUp(oferta) {
       document.querySelector(".price-js").innerHTML = "Preț: 10 000 €";
       document.querySelector(".adresa-js").innerHTML = "Adresa: str. Burebista";
     } else if (oferta == 19) {
-      document.querySelector(".pop-up-photos").style.height = "19vh";
-      document.querySelector(".pop-up-photos").style.gap = "1%";
-      document.querySelector(".pop-up-photos").style.gap = "1%";
-      document.querySelector(".pop-up-photos img").style.width = "15%";
       document.querySelector(".pop-up-img-1").src = "../popupimagini/img19.0.jpg";
       document.querySelector(".pop-up-img-2").style.display = "none";
       document.querySelector(".pop-up-img-3").style.display = "none";
@@ -389,16 +319,12 @@ function popUp(oferta) {
       document.querySelector(".price-js").innerHTML = "Preț: 12 000 €";
       document.querySelector(".adresa-js").innerHTML = " ";
     } else if (oferta == 20) {
-      document.querySelector(".pop-up-photos").style.height = "19vh";
-      document.querySelector(".pop-up-photos").style.gap = "1%";
-      document.querySelector(".pop-up-photos").style.gap = "1%";
-      document.querySelector(".pop-up-photos img").style.width = "15%";
       document.querySelector(".pop-up-img-1").src = "../popupimagini/img20.1.jpg";
       document.querySelector(".pop-up-img-2").src = "../popupimagini/img20.2.jpg";
-      document.querySelector(".pop-up-img-3").src = "../popupimagini/img20.3.jpg";
-      document.querySelector(".pop-up-img-4").src = "../popupimagini/img20.4.jpg";
-      document.querySelector(".pop-up-img-5").src = "../popupimagini/img20.5.jpg";
-      document.querySelector(".pop-up-img-6").src = "../popupimagini/img20.6.jpg";
+      document.querySelector(".pop-up-img-3").style.display = "none";
+      document.querySelector(".pop-up-img-4").style.display = "none";
+      document.querySelector(".pop-up-img-5").style.display = "none";
+      document.querySelector(".pop-up-img-6").style.display = "none";
       document.querySelector(".pop-up-img-7").style.display = "none";
       document.querySelector(".pop-up-img-8").style.display = "none";
       document.querySelector(".pop-up-img-9").style.display = "none";
