@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Solid Imobil</title>
+  <title>Solid Mobil</title>
   <link rel="stylesheet" href="../css/style.css" />
   <script type="text/javascript" src="../js/script.js"></script>
   <script type="text/javascript" src="../js/carosel.js"></script>
@@ -13,7 +13,7 @@
     href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-  <script src="../js/script.js"></script>
+  <script src="js/script.js"></script>
 </head>
 
 
@@ -36,9 +36,9 @@
       <h2 class="h2 sectiune-titlu">Case</h2>
 
       <div class="optiuni-pagini">
-        <div class="opt"><a class="opt-text" href="terenuri.html">Terenuri</a>
+        <div class="opt"><a class="opt-text" href="../pagini/terenuri.html">Terenuri</a>
         </div>
-        <div class="opt"><a class="opt-text" href="spatiicomerciale.html">Spatii comerciale</a>
+        <div class="opt"><a class="opt-text" href="../pagini/spatiicomerciale.html">Spatii comerciale</a>
         </div>
       </div>
 
@@ -237,7 +237,98 @@
     </div>
   </section>
 
- 
+  <footer class="contacte" id="contacte">
+    <div class="sectiune">
+        <div class="contacte-img">
+            <a>
+                <img src="../imagini/logo.jpg" alt="Logo-ul">
+            </a>
+            <p class="sectiune-text">
+                Suntem aici pentru a vă ajuta să vă gestionați proprietățile și să vă asigurați că totul este în
+                ordine.
+            </p>
+            <ul class="contacte-lista">
+                <li>
+                    <a class="contacte-link">
+                        <i class='bx bx-location-plus'></i>
+
+                        <address>Raionul Leova, or. Leova, <br> str. Ștefan cel Mare și Sfînt nr. 73 / biroul 28
+                        </address>
+                    </a>
+                </li>
+                <li>
+                    <a href="tel:+37367624261" class="contacte-link">
+                        <i class='bx bx-phone-call'></i>
+
+                        <span>0699 38 043</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:emmaverabsv.2018@gmail.com" class="contacte-link">
+                        <i class='bx bxl-gmail'></i>
+
+                        <span>emmaverabsv.2018@gmail.com</span>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="r-sociale-list">
+                <li>
+                    <a href="https://www.facebook.com/SOLIDIMOBIL?mibextid=ZbWKwL" target="_blank" class="r-sociale-link">
+                        <i class='bx bxl-facebook-square'></i>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2747.6390929168742!2d28.250568087256465!3d46.475656296613984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c9fec6caa8a095%3A0x8b9f0fb38cbd30b0!2zU3RyYWRhIMiYdGVmYW4gY2VsIE1hcmUsIExlb3ZhLCDQnNC-0LvQtNC-0LLQsA!5e0!3m2!1sru!2s!4v1705747229153!5m2!1sru!2s"
+                height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="formular-sectiune">
+            <form id="formular">
+
+                <h3>Lăsați-ne un mesaj</h3>
+                <input type="hidden" name="_next" value="http://www.solidimobil.com">
+                <input type="text" id="nume" placeholder="Nume" required><br>
+                <input type="email" id="email_id" placeholder="Email" required><br>
+                <textarea name="message" id="message" rows="4" placeholder="Mesaj" required></textarea><br>
+                <input type="button" id="transmite" onclick="send()" value="Transmite">
+            </form>
+        </div>
+        <div class="contacte-link-box">
+            <ul class="detalii-lista">
+                <li>
+                    <p class="detalii-lista-titlu">Compania</p>
+                </li>
+                <li>
+                    <a href="#despre-noi" class="detalii-link">Despre noi</a>
+                </li>
+                <li>
+                    <a href="#oferte" class="detalii-link">Oferte</a>
+                </li>
+                <li>
+                    <a href="#servicii" class="detalii-link">Servicii</a>
+                </li>
+                <li>
+                    <a href="#contacte" class="detalii-link">Contacte</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="sectiune-copyright" >
+        <div class="sectiune" id="data"></div>
+    </div>
+
+</footer>
+
+<script src="../js/data.js"></script>
 
 </body>
 

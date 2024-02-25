@@ -503,7 +503,7 @@ nav a {
     right: 2vh;
     top: 2vh;
     transition: 0.5s;
-    color: rgb(0, 0, 0);
+    color: hsl(222, 36.04%, 43.53%);
 }
 
 .exit-js:hover {
@@ -1067,7 +1067,7 @@ form {
         margin-left: 10px;
     }
 
-    .terenuri, .case, .spatii-comercialw .oferte-opt {
+    .terenuri .oferte-opt, .case .oferte-opt, .spatiicomerciale .oferte-opt {
         margin-left: 0px;
     }
 
@@ -1150,7 +1150,6 @@ form {
         gap: 1%;
         height: 19px;
         width: 90%;
-        margin-top: -10px;
     }
 
     .pop-up-photos img {
@@ -1160,9 +1159,7 @@ form {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 46px;
         object-fit: cover;
-     
     }
 
     .date-js {
@@ -1194,7 +1191,6 @@ form {
         right: 2px;
         top: 2px;
         font-size: 40px;
-        color: hsl(222, 36.04%, 43.53%);
     }
 
 }
