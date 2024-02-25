@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solid Imobil</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script type="text/javascript" src="../js/script.js"></script>
+  <script type="text/javascript" src="../js/carosel.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <script src="../js/script.js" defer></script>
+</head>
+
+<body>
+
+  <header class="meniu">
+    <a href="../index.html#acasa"><img class="logo-ul" src="../imagini/logo.png" alt="Logo-ul" /></a>
+    <nav class="BaraDeNavigare">
+      <a href="../index.html#acasa" class="link-navigare">Acasa</a>
+      <a href="../index.html#oferte" class="link-navigare">Oferte</a>
+      <a href="../index.html#desprenoi" class="link-navigare">Despre Noi</a>
+      <a href="../index.html#servicii" class="link-navigare">Servicii</a>
+      <a href="../index.html#contacte" class="link-navigare">Contacte</a>
+    </nav>
+    <i id="hamburger" onclick="mobileMenu()" class="fas fa-bars"></i>
+  </header>
+
+  <body>
+
+    <section class="oferte" id="oferte">
+      <div class="sectiune-pagini">
+        <p class="sectiune-subtitlu">Oferte</p>
+        <h2 class="h2 sectiune-titlu">Terenuri</h2>
+
+        <div class="optiuni-pagini">
+          <div class="opt"><a class="opt-text" href="case.html">Case</a>
+          </div>
+          <div class="opt"><a class="opt-text" href="spatiicomerciale.html">Spatii comerciale</a>
+          </div>
+        </div>
+
+        <div class="sectiune-terenuri">
+          <div class="pop-up-js">
+            <button class="exit-js" onclick="popUp(0)"><i class='bx bxs-x-circle'></i></button>
+            <div class="pop-up-photos">
+              <img class="pop-up-img-1" src="" alt="1" onclick="openPlayer(1)" />
+              <img class="pop-up-img-2" src="" alt="2" onclick="openPlayer(2)" />
+              <img class="pop-up-img-3" src="" alt="3" onclick="openPlayer(3)" />
+              <img class="pop-up-img-4" src="" alt="4" onclick="openPlayer(4)" />
+              <img class="pop-up-img-5" src="" alt="5" onclick="openPlayer(5)" />
+              <img class="pop-up-img-6" src="" alt="6" onclick="openPlayer(6)" />
+              <img class="pop-up-img-7" src="" alt="7" onclick="openPlayer(7)" />
+              <img class="pop-up-img-8" src="" alt="8" onclick="openPlayer(8)" />
+              <img class="pop-up-img-9" src="" alt="9" onclick="openPlayer(9)" />
+              <img class="pop-up-img-10" src="" alt="10" onclick="openPlayer(10)" />
+            </div>
+            <div class="pop-up-bottom">
+              <div class="pop-up-bottom-left">
+                <p class="main-txt-js"></p>
+                <p class="date-js"></p>
+              </div>
+              <div class="pop-up-bottom-right">
+                <p class="price-js"></p>
+                <p class="adresa-js"></p>
+                <button onclick="popUp(0); scrollFunction('contacte')" class="pop-up-contact-js">
+                  Contact
+                </button>
+              </div>
+            </div>
+          </div>
+          <ul class="oferte-lista terenuri">
+            <li class="elemente">
+              <div class="oferte-opt">
+                <figure class="oferte-img">
+                  <a onclick="popUp(3) " href="#">
+                    <img src="../imagini/img3.0.jpg" alt="Casa Noua" />
+                  </a>
+                </figure>
+
+                <div class="oferte-continut">
+                  <div class="oferte-pret">
+                    <strong>10,000 €</strong>
+                  </div>
+
+                  <h3 class="h3 oferte-titlu">
+                    <a onclick="popUp(3)" href="#">Teren pentru construcții</a>
+                  </h3>
+
+                  <p class="oferte-text">
+                    Teren pentru construcții în or. Leova cu iesire
+                    la drumul național care duce la Vama Leova-Bumbăta.
+                  </p>
+
+                  <ul class="oferte-lista">
+                    <li class="oferte-info">
+                      <span>str. <strong>Cîmpiilor</strong></span>
+                    </li>
+                    <li class="oferte-info">
+                      <span><strong>0,0950</strong> Ha</span>
+                    </li>
+                  </ul>
+                </div>
+            </li>
+
+            <li class="elemente">
+              <div class="oferte-opt">
+                <figure class="oferte-img">
+                  <a onclick="popUp(4) " href="#">
+                    <img src="../imagini/img4.0.jpg" alt="Casa Noua" />
+                  </a>
+                </figure>
+
+                <div class="oferte-continut">
+                  <div class="oferte-pret">
+                    <strong>20,500 €</strong>
+                  </div>
+
+                  <h3 class="h3 oferte-titlu">
+                    <a onclick="popUp(4)" href="#">Teren pentru construcții</a>
+                  </h3>
+
+                  <p class="oferte-text">
+                    Teren aferent Casei de locuit, amplasat pe strada Unirii în apropiere de
+                    Centrul Multifuncțional.
+                  </p>
+
+                  <ul class="oferte-lista">
+                    <li class="oferte-info">
+                      <span>str. <strong>Unirii</strong></span>
+                    </li>
+                    <li class="oferte-info">
+                      <span><strong>0,1500</strong> Ha</span>
+                    </li>
+                  </ul>
+                </div>
+            </li>
+
+
+            <li class="elemente">
+              <div class="oferte-opt">
+                <figure class="oferte-img">
+                  <a onclick="popUp(7) " href="#">
+                    <img src="../imagini/img7.0.jpg" alt="Casa Noua" />
+                  </a>
+                </figure>
+
+                <div class="oferte-continut">
+                  <div class="oferte-pret">
+                    <strong>6,200 €</strong>
+                  </div>
+
+                  <h3 class="h3 oferte-titlu">
+                    <a onclick="popUp(7)" href="#">Teren pentru construcții</a>
+                  </h3>
+
+                  <p class="oferte-text">
+                    Teren amplasat într- o zonă pitorească, liniștită, zona perfectă pentru construcția unei case de
+                    locuit
+                    de vis.
+                  </p>
+
+                  <ul class="oferte-lista">
+                    <li class="oferte-info">
+                      <span><strong>0,06</strong> Ha</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li class="elemente">
+              <div class="oferte-opt">
+                <figure class="oferte-img">
+                  <a onclick="popUp(8) " href="#">
+                    <img src="../imagini/img8.0.jpg" alt="Casa Noua" />
+                  </a>
+                </figure>
+
+                <div class="oferte-continut">
+                  <div class="oferte-pret">
+                    <strong>10,500 €</strong>
+                  </div>
+
+                  <h3 class="h3 oferte-titlu">
+                    <a onclick="popUp(8)" href="#">Teren pentru construcții</a>
+                  </h3>
+
+                  <p class="oferte-text">
+                    Teren cu suprafața de
+                    0,0860 ha în or. Leova, amplasat pe str. Constantin Stere, în zona centru.
+                  </p>
+
+                  <ul class="oferte-lista">
+                    <li class="oferte-info">
+                      <span>str. <strong>Constantin Stere</strong></span>
+                    </li>
+                    <li class="oferte-info">
+                      <span><strong>0,0860</strong> Ha</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li class="elemente">
+              <div class="oferte-opt">
+                <figure class="oferte-img">
+                  <a onclick="popUp(9) " href="#">
+                    <img src="../imagini/img9.0.jpg" alt="Casa Noua" />
+                  </a>
+                </figure>
+
+                <div class="oferte-continut">
+                  <div class="oferte-pret">
+                    <strong>3,000 €</strong>
+                  </div>
+
+                  <h3 class="h3 oferte-titlu">
+                    <a onclick="popUp(9)" href="#">Teren pentru construcții</a>
+                  </h3>
+
+                  <p class="oferte-text">
+                    Teren pentru construcții în or. Leova, str. Liviu Damian nr. 55,
+                    în zona locurilor de casă atribuite pentru familiile tinere.
+                  </p>
+
+                  <ul class="oferte-lista">
+                    <li class="oferte-info">
+                      <span>str. <strong>Liviu Damian nr. 55</strong></span>
+                    </li>
+                    <li class="oferte-info">
+                      <span><strong>0,0703</strong> Ha</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li class="elemente">
+              <div class="oferte-opt">
+                <figure class="oferte-img">
+                  <a onclick="popUp(10) " href="#">
+                    <img src="../imagini/img10.0.jpg" alt="Casa Noua" />
+                  </a>
+                </figure>
+
+                <div class="oferte-continut">
+                  <div class="oferte-pret">
+                    <strong>4,000 €</strong>
+                  </div>
+
+                  <h3 class="h3 oferte-titlu">
+                    <a onclick="popUp(10)" href="#">Teren pentru construcții</a>
+                  </h3>
+
+                  <p class="oferte-text">
+                    Teren pentru construcții amplasat în sat. Hănășenii Noi, r-nul Leova, în
+                    apropiere de drumul național R34 Cahul-Chișinău.
+                  </p>
+
+                  <ul class="oferte-lista">
+                    <li class="oferte-info">
+                      <span><strong>0,1230</strong> Ha</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li class="elemente">
+              <div class="oferte-opt">
+                <figure class="oferte-img">
+                  <a onclick="popUp(11) " href="#">
+                    <img src="../imagini/img11.0.jpg" alt="Casa Noua" />
+                  </a>
+                </figure>
+
+                <div class="oferte-continut">
+                  <div class="oferte-pret">
+                    <strong>3,500 €</strong>
+                  </div>
+
+                  <h3 class="h3 oferte-titlu">
+                    <a onclick="popUp(11)" href="#">Teren pentru construcții</a>
+                  </h3>
+
+                  <p class="oferte-text">
+                    Teren pentru construcții în or. Leova, amplasat în zona locurilor de casă
+                    atribuite pentru familiile tinere, la ROZA.
+                  </p>
+
+                  <ul class="oferte-lista">
+                    <li class="oferte-info">
+                      <span><strong>0,0700</strong> Ha</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li class="elemente">
+              <div class="oferte-opt">
+                <figure class="oferte-img">
+                  <a onclick="popUp(13) " href="#">
+                    <img src="../imagini/img13.0.jpg" alt="Casa Noua" />
+                  </a>
+                </figure>
+
+                <div class="oferte-continut">
+                  <div class="oferte-pret">
+                    <strong>4,000 €</strong>
+                  </div>
+
+                  <h3 class="h3 oferte-titlu">
+                    <a onclick="popUp(13)" href="#">Teren pentru construcții</a>
+                  </h3>
+
+                  <p class="oferte-text">
+                    Teren pentru construcții cu suprafața de 0,0600 ha pe str. Dimitrie Cantemir. Există acces la
+                    toate rețelele inginerești.
+                  </p>
+
+                  <ul class="oferte-lista">
+                    <li class="oferte-info">
+                      <span>str. <strong>Dimitrie Cantemir</strong> </span>
+                    </li>
+                    <li class="oferte-info">
+                      <span><strong>0,0600</strong> Ha</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li class="elemente">
+              <div class="oferte-opt">
+                <figure class="oferte-img">
+                  <a onclick="popUp(14) " href="#">
+                    <img src="../imagini/img14.0.jpg" alt="Casa Noua" />
+                  </a>
+                </figure>
+
+                <div class="oferte-continut">
+                  <div class="oferte-pret">
+                    <strong>9,000 €</strong>
+                  </div>
+
+                  <h3 class="h3 oferte-titlu">
+                    <a onclick="popUp(14)" href="#">Teren pentru construcții</a>
+                  </h3>
+
+                  <p class="oferte-text">
+                    Teren pentru construții cu suprafața de 0,0649 ha, zona - centru, există acces la toate rețelele
+                    inginerești.
+                  </p>
+
+                  <ul class="oferte-lista">
+                    <li class="oferte-info">
+                      <span><strong>0,0649</strong> Ha</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li class="elemente">
+              <div class="oferte-opt">
+                <figure class="oferte-img">
+                  <a onclick="popUp(15)" href="#">
+                    <img src="../imagini/img15.0.JPG" alt="Casa Noua" />
+                  </a>
+                </figure>
+
+                <div class="oferte-continut">
+                  <div class="oferte-pret">
+                    <strong>5,000 €</strong>
+                  </div>
+
+                  <h3 class="h3 oferte-titlu">
+                    <a onclick="popUp(15)" href="#">Teren pentru construcții </a>
+                  </h3>
+
+                  <p class="oferte-text">
+                    De vînzare teren pentru construcții cu suprafața de 0,0706 ha.
+                    Amplasat pe str. Petru Dudnic.
+                  </p>
+
+                  <ul class="oferte-lista">
+                    <li class="oferte-info">
+                      <span>str. <strong>Petru Dudnic</strong></span>
+                    </li>
+
+                    <li class="oferte-info">
+                      <span><strong>0,0706</strong> Ha</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li class="elemente">
+              <div class="oferte-opt">
+                <figure class="oferte-img">
+                  <a onclick="popUp(16)" href="#">
+                    <img src="../imagini/img16.0.JPG" alt="Casa Noua" />
+                  </a>
+                </figure>
+
+                <div class="oferte-continut">
+                  <div class="oferte-pret">
+                    <strong>18,000 €</strong>
+                  </div>
+
+                  <h3 class="h3 oferte-titlu">
+                    <a onclick="popUp(16)" href="#">Teren pentru construcții</a>
+                  </h3>
+
+                  <p class="oferte-text">
+                    Teren cu suprafața de 0,18 ha.
+                    Amplasat pe str. Mihai Eminescu, există acces la toate rețelele
+                    inginerești.
+                  </p>
+
+                  <ul class="oferte-lista">
+                    <li class="oferte-info">
+                      <span>str. <strong>Mihai Eminescu</strong></span>
+                    </li>
+
+                    <li class="oferte-info">
+                      <span><strong>0,18 </strong> Ha</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="elemente">
+              <div class="oferte-opt">
+                <figure class="oferte-img">
+                  <a onclick="popUp(17)" href="#">
+                    <img src="../imagini/img17.0.jpg" alt="Casa Noua" />
+                  </a>
+                </figure>
+
+                <div class="oferte-continut">
+                  <div class="oferte-pret">
+                    <strong>10,000 €</strong>
+                  </div>
+
+                  <h3 class="h3 oferte-titlu">
+                    <a onclick="popUp(17)" href="#">Teren pentru construcții</a>
+                  </h3>
+
+                  <p class="oferte-text">
+                    Teren pentru construcții cu suprafața de 0,0769 ha.
+                    Amplasare în centrul orașului Leova.
+                  </p>
+
+                  <ul class="oferte-lista">
+                    <li class="oferte-info">
+                      <span><strong>0,0769</strong> Ha</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="elemente">
+              <div class="oferte-opt">
+                <figure class="oferte-img">
+                  <a onclick="popUp(18)" href="#">
+                    <img src="../imagini/img18.0.jpg" alt="Casa Noua" />
+                  </a>
+                </figure>
+
+                <div class="oferte-continut">
+                  <div class="oferte-pret">
+                    <strong>10,000 €</strong>
+                  </div>
+
+                  <h3 class="h3 oferte-titlu">
+                    <a onclick="popUp(18)" href="#">Terenuri pentru construcție</a>
+                  </h3>
+
+                  <p class="oferte-text">
+                    2 terenuri pentru construcție cu acces la drum
+                    fiecare, se poate de vîndut și aparte. Este acces la toate rețelele.
+                  </p>
+
+                  <ul class="oferte-lista">
+                    <li class="oferte-info">
+                      <span>str. <strong>Burebista</strong></span>
+                    </li>
+
+                    <li class="oferte-info">
+                      <span><strong>0,1286</strong> Ha</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="elemente">
+              <div class="oferte-opt">
+                <figure class="oferte-img">
+                  <a onclick="popUp(20)" href="#">
+                    <img src="../imagini/img20.0.jpg" alt="Casa Noua" />
+                  </a>
+                </figure>
+
+                <div class="oferte-continut">
+                  <div class="oferte-pret">
+                    <strong> 15,000 €</strong>
+                  </div>
+
+                  <h3 class="h3 oferte-titlu">
+                    <a onclick="popUp(20)" href="#">Teren pentru construcții</a>
+                  </h3>
+
+                  <p class="oferte-text">
+                    Teren pentru construcții cu suprafata 0,10 ha situat pe adresa raionul Leova, or. Leova, str. Podul
+                    de
+                    flori nr. 46.
+                  </p>
+
+                  <ul class="oferte-lista">
+                    <li class="oferte-info">
+                      <span>str. <strong>Podul de flori nr. 46</strong></span>
+                    </li>
+
+                    <li class="oferte-info">
+                      <span><strong>0,10</strong> Ha</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+ 
+
+  </body>
+
+</html>
