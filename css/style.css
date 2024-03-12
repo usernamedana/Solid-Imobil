@@ -1102,6 +1102,9 @@ form {
     .elemente {
         margin-bottom: 15px;
     }
+    .pop-up-js{
+        z-index: 1;
+    }
 
     .pop-up-photos {
         display: flex;
