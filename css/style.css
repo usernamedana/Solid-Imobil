@@ -496,6 +496,11 @@ nav a {
     border-radius: 1.5vh;
     border: 5px solid hsl(200, 15%, 43%);
 }
+.o-pop-up {
+    position: fixed;
+    top: 15.8vh;
+    left: 15.8vw;
+}
 
 .exit-js {
     position: absolute;
