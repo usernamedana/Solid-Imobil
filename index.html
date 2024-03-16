@@ -13,7 +13,6 @@ Atunci când un client apelează la o Companie Imobiliară, un broker imobiliar 
     <meta name="author" content="Grosu Daniela & Tamazlicari Maria">
     <title>Solid Imobil</title>
     <link rel="stylesheet" href="css/style.css">
-<!--     <script type="text/javascript" src="js/script.js"></script> -->
     <script type="text/javascript" src="js/carosel.js"></script>
     <script type="text/javascript" src="js/email.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
@@ -28,10 +27,13 @@ Atunci când un client apelează la o Companie Imobiliară, un broker imobiliar 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 
     <link rel="shortcut icon" href="imagini/logo-icon.png" type="image/x-icon">
-
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript" src="js/email.js" defer> </script>
     <script src="js/index.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -731,7 +733,7 @@ Atunci când un client apelează la o Companie Imobiliară, un broker imobiliar 
             <h2 class="h2 sectiune-titlu">Obiectivul nostru principal</h2>
             <ul class="servicii-lista">
                 <li class="elemente">
-                    <div class="servicii-opt">
+                    <div class="servicii-opt" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                         <div class="opt-icon">
                             <img src="imagini/servicii1.png">
                         </div>
@@ -745,7 +747,7 @@ Atunci când un client apelează la o Companie Imobiliară, un broker imobiliar 
                     </div>
                 </li>
                 <li class="elemente">
-                    <div class="servicii-opt">
+                    <div class="servicii-opt" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                         <div class="opt-icon">
                             <img src="imagini/servicii2.png">
                         </div>
@@ -762,7 +764,7 @@ Atunci când un client apelează la o Companie Imobiliară, un broker imobiliar 
                 </li>
 
                 <li class="elemente">
-                    <div class="servicii-opt">
+                    <div class="servicii-opt" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                         <div class="opt-icon">
                             <img src="imagini/servicii3.png" alt="Service icon">
                         </div>
@@ -888,6 +890,9 @@ Atunci când un client apelează la o Companie Imobiliară, un broker imobiliar 
     </footer>
     <script src="js/data.js"></script>
     <script src="js/carosel.js"></script>
+    <script>
+       AOS.init();
+      </script>
 
 </body>
 
