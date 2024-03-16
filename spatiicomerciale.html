@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solid Mobil</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script type="text/javascript" src="../js/script.js"></script>
+  <script type="text/javascript" src="../js/carosel.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <script src="js/script.js" defer></script>
+  <link rel="shortcut icon" href="../imagini/logo-icon.png" type="image/x-icon">
+</head>
+
+<body>
+  <header class="meniu">
+    <a href="../index.html#acasa"><img class="logo-ul" src="../imagini/logo.png" alt="Logo-ul" /></a>
+    <nav class="BaraDeNavigare">
+      <a href="../index.html#acasa" class="link-navigare">Acasa</a>
+      <a href="../index.html#oferte" class="link-navigare">Oferte</a>
+      <a href="../index.html#desprenoi" class="link-navigare">Despre Noi</a>
+      <a href="../index.html#servicii" class="link-navigare">Servicii</a>
+      <a href="../index.html#contacte" class="link-navigare">Contacte</a>
+    </nav>
+    <i id="hamburger" onclick="mobileMenu()" class="fas fa-bars"></i>
+  </header>
+
+  <section class="oferte" id="oferte">
+    <div class="sectiune-pagini">
+      <p class="sectiune-subtitlu">Oferte</p>
+      <h2 class="h2 sectiune-titlu">Spații Comerciale</h2>
+
+      <div class="optiuni-pagini">
+        <div class="opt"><a class="opt-text" href="../pagini/case.html">Case</a>
+        </div>
+        <div class="opt"><a class="opt-text" href="../pagini/terenuri.html">Terenuri</a>
+        </div>
+      </div>
+
+      <div class="sectiune-spatiicomerciale">
+        <div class="pop-up-js o-pop-up">
+          <button class="exit-js" onclick="popUp(0)"><i class='bx bxs-x-circle'></i></button>
+          <div class="pop-up-photos">
+            <img class="pop-up-img-1" src="" alt="1" onclick="openPlayer(1)">
+            <img class="pop-up-img-2" src="" alt="2" onclick="openPlayer(2)">
+            <img class="pop-up-img-3" src="" alt="3" onclick="openPlayer(3)">
+            <img class="pop-up-img-4" src="" alt="4" onclick="openPlayer(4)">
+            <img class="pop-up-img-5" src="" alt="5" onclick="openPlayer(5)">
+            <img class="pop-up-img-6" src="" alt="6" onclick="openPlayer(6)">
+            <img class="pop-up-img-7" src="" alt="7" onclick="openPlayer(7)">
+            <img class="pop-up-img-8" src="" alt="8" onclick="openPlayer(8)">
+            <img class="pop-up-img-9" src="" alt="9" onclick="openPlayer(9)">
+            <img class="pop-up-img-10" src="" alt="10" onclick="openPlayer(10)">
+          </div>
+          <div class="pop-up-bottom">
+            <div class="pop-up-bottom-left">
+              <p class="main-txt-js"></p>
+              <p class="date-js"></p>
+            </div>
+            <div class="pop-up-bottom-right">
+              <p class="price-js"></p>
+              <p class="adresa-js"></p>
+              <button onclick="popUp(0); scrollFunction('contacte')" class="pop-up-contact-js">Contact</button>
+            </div>
+          </div>
+        </div>
+        <ul class="oferte-lista spatiicomerciale">
+          <li class="elemente">
+            <div class="oferte-opt">
+              <figure class="oferte-img">
+                <a onclick="popUp(2)">
+                  <img src="../imagini/img.2.1.jpg" alt="Casa Noua" />
+                </a>
+              </figure>
+
+              <div class="oferte-continut">
+                <div class="oferte-pret">
+                  <strong>SUPER OFERTĂ!!!</strong>
+                </div>
+
+                <h3 class="h3 oferte-titlu">
+                  <a onclick="popUp(2)">Magazin/cafenea</a>
+                </h3>
+
+                <p class="oferte-text">
+                  Ofertă specială pentru cei care doresc să investească în comerț!!! Avem spre vînzare sau arendă un
+                  magazin comercial.
+                </p>
+
+                <ul class="oferte-lista">
+                  <li class="oferte-info">
+                    <span> <strong>Centrul orașului Iargara</strong></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="contacte" id="contacte">
+    <div class="sectiune">
+        <div class="contacte-img">
+            <a>
+                <img src="../imagini/logo.jpg" alt="Logo-ul">
+            </a>
+            <p class="sectiune-text">
+                Suntem aici pentru a vă ajuta să vă gestionați proprietățile și să vă asigurați că totul este în
+                ordine.
+            </p>
+            <ul class="contacte-lista">
+                <li>
+                    <a class="contacte-link">
+                        <i class='bx bx-location-plus'></i>
+
+                        <address>Raionul Leova, or. Leova, <br> str. Ștefan cel Mare și Sfînt nr. 73 / biroul 28
+                        </address>
+                    </a>
+                </li>
+                <li>
+                    <a href="tel:+37367624261" class="contacte-link">
+                        <i class='bx bx-phone-call'></i>
+
+                        <span>0699 38 043</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:emmaverabsv.2018@gmail.com" class="contacte-link">
+                        <i class='bx bxl-gmail'></i>
+
+                        <span>emmaverabsv.2018@gmail.com</span>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="r-sociale-list">
+                <li>
+                    <a href="https://www.facebook.com/SOLIDIMOBIL?mibextid=ZbWKwL" target="_blank" class="r-sociale-link">
+                        <i class='bx bxl-facebook-square'></i>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2747.6390929168742!2d28.250568087256465!3d46.475656296613984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c9fec6caa8a095%3A0x8b9f0fb38cbd30b0!2zU3RyYWRhIMiYdGVmYW4gY2VsIE1hcmUsIExlb3ZhLCDQnNC-0LvQtNC-0LLQsA!5e0!3m2!1sru!2s!4v1705747229153!5m2!1sru!2s"
+                height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="formular-sectiune">
+            <form id="formular">
+
+                <h3>Lăsați-ne un mesaj</h3>
+                <input type="hidden" name="_next" value="http://www.solidimobil.com">
+                <input type="text" id="nume" placeholder="Nume" required><br>
+                <input type="email" id="email_id" placeholder="Email" required><br>
+                <textarea name="message" id="message" rows="4" placeholder="Mesaj" required></textarea><br>
+                <input type="button" id="transmite" onclick="send()" value="Transmite">
+            </form>
+        </div>
+        <div class="contacte-link-box">
+            <ul class="detalii-lista">
+                <li>
+                    <p class="detalii-lista-titlu">Compania</p>
+                </li>
+                <li>
+                    <a href="#despre-noi" class="detalii-link">Despre noi</a>
+                </li>
+                <li>
+                    <a href="#oferte" class="detalii-link">Oferte</a>
+                </li>
+                <li>
+                    <a href="#servicii" class="detalii-link">Servicii</a>
+                </li>
+                <li>
+                    <a href="#contacte" class="detalii-link">Contacte</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="sectiune-copyright" >
+        <div class="sectiune" id="data"></div>
+    </div>
+
+</footer>
+
+<script src="../js/data.js"></script>
+
+</body>
+
+</html>
