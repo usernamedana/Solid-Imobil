@@ -94,13 +94,6 @@ function popUp(oferta) {
     } else if (oferta == 11) {
       document.querySelector(".pop-up-img-1").src = "../popupimagini/img11.0.jpg";
       document.querySelector(".pop-up-img-2").src = "../popupimagini/img11.1.jpg";
-      document.querySelector(".pop-up-img-3").style.display = "none";
-      document.querySelector(".pop-up-img-4").style.display = "none";
-      document.querySelector(".pop-up-img-5").style.display = "none";
-      document.querySelector(".pop-up-img-7").style.display = "none";
-      document.querySelector(".pop-up-img-8").style.display = "none";
-      document.querySelector(".pop-up-img-9").style.display = "none";
-      document.querySelector(".pop-up-img-10").style.display = "none";
       document.querySelector(".main-txt-js").innerHTML =
         "De vînzare Teren pentru Construcții cu suprafața de 0,0700 ha în or. Leova, amplasat în zona locurilor de casă atribuite pentru familiile tinere, la ROZA. Cu un cumpărător real prețul se mai discută.";
       document.querySelector(".date-js").innerHTML = "20 ianuarie 2021";
