@@ -191,7 +191,7 @@ nav a {
     justify-content: flex-start;
     align-items: left;
     padding-inline-start: 100px;
-    height: 653px;
+    height: inherit;
     position: relative;
 }
 
@@ -208,7 +208,7 @@ nav a {
 
 .Acasa-text {
     padding-left: 30px;
-    max-width: 450px;
+    max-width: 450px; 
     margin-bottom: 40px;
 }
 
@@ -222,8 +222,8 @@ nav a {
 }
 
 .img-casa {
-    width: 85%;
-    height: 85%;
+    width: 70%;
+    height: 70%;
     margin-top: 5rem;
     margin-left: 30rem;
     display: block;
@@ -993,22 +993,10 @@ form {
         margin-left: 10px;
         position: relative;
         margin-bottom: 0px;
-        width: auto;
-        margin-right: 0px;
-    }
-
-    .img-casa {
-
-        display: flex;
-        margin: 10px;
-        margin-left: 10px;
     }
 
     .Acasa .sectiune {
-        justify-content: center;
         padding-inline-start: 0px;
-        align-items: center;
-        height: inherit;
         display: inline-block;
     }
 
