@@ -39,7 +39,6 @@ button {
 .h3 {
     color: hsl(188, 63%, 7%);
     font-family: "Poppins", sans-serif;
-    line-height: 1;
 }
 
 .h1 {
@@ -59,21 +58,13 @@ button {
     color: hsl(188, 63%, 7%);
     font-family: "Poppins", sans-serif;
     font-size: 2.5rem;
-    line-height: 1;
 }
 
 li {
     list-style: none;
 }
 
-.sectiune {
-    padding-inline: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.sectiune-pagini {
+.sectiune, .sectiune-pagini  {
     padding-inline: 120px;
     display: flex;
     align-items: center;
@@ -106,8 +97,6 @@ li {
 
 .elemente {
     display: inline-block;
-    flex-shrink: 0;
-    scroll-snap-align: start;
 }
 
 .carosel {
@@ -142,7 +131,6 @@ li {
     height: 60px;
     cursor: pointer;
     padding: 0px 25px;
-
 }
 
 nav {
@@ -392,7 +380,6 @@ nav a {
     height: 220px;
     width: 300px;
     position: relative;
-    aspect-ratio: 1 / 1;
     overflow: hidden;
     cursor: pointer;
     border-radius: 5px 5px 0px 0px;
