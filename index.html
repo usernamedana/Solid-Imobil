@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="
+    <meta name="description"
+        content="
 Agenția imobiliară ”Solid Imobil”. Compania tînără, cu personalul angajat în funcție deține o experiență vastă în domeniul cadastrului, construcțiilor și marketing-ului, o echipă de profesioniști dornică de a satisface cerințele clienților la cea mai înaltă calitate!
 Brokerul imobiliar este persoana care nu doar organizează și eficientizează procesul de tranzacționare imobiliară, atât în avantajul vânzătorului, cât și în beneficiul cumpărătorului, dar, de asemenea, cunoaște procedura vânzării unui imobil, capabil, în sens juridic, de a consulta părțile, de a verifica actele de proprietate, datele de la oficiul cadastral, astfel asigurând ambelor părți mai multă siguranță în tranzacțiile imobiliare
 Atunci când un client apelează la o Companie Imobiliară, un broker imobiliar ar trebui, să recomande unde să cumpere, pe măsura necesităților sale, eficientizându-i timpul nu numai la identificarea unui imobil, dar și în cazul apelării la un credit ipotecar, la pregătirea dosarului sau recomandarea unei bănci cu care se lucrează în avantajul clientului.">
@@ -16,6 +17,7 @@ Atunci când un client apelează la o Companie Imobiliară, un broker imobiliar 
     <script type="text/javascript" src="js/carosel.js"></script>
     <script type="text/javascript" src="js/email.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/favorite.js"></script>
 
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
@@ -27,9 +29,9 @@ Atunci când un client apelează la o Companie Imobiliară, un broker imobiliar 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 
     <link rel="shortcut icon" href="imagini/logo-icon.png" type="image/x-icon">
-    
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript" src="js/email.js" defer> </script>
     <script src="js/index.js" defer></script>
@@ -37,13 +39,14 @@ Atunci când un client apelează la o Companie Imobiliară, un broker imobiliar 
 </head>
 
 <body>
-    <script>
+    <!-- <script>
         alert('Proiectul este elaborat în cadrul concursului Tekwill Junior Ambassadors 2024')
-    </script>
+    </script> -->
+
 
     <header class="meniu">
         <a href="#acasa"><img class="logo-ul" src="imagini/logo.png" alt="Solid Mobil logo"></a>
-        <nav id="main-menu" >
+        <nav id="main-menu">
             <a href="#acasa" class="link-navigare">Acasa</a>
             <a href="#oferte" class="link-navigare">Oferte</a>
             <a href="#despre-noi" class="link-navigare">Despre Noi</a>
@@ -74,7 +77,8 @@ Atunci când un client apelează la o Companie Imobiliară, un broker imobiliar 
                     </div>
                 </div>
             </div>
-            <img src="imagini/homeimg5.png" alt="Casă Modernă" class="img-casa" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+            <img src="imagini/homeimg5.png" alt="Casă Modernă" class="img-casa" data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom">
         </div>
     </section>
 
@@ -108,13 +112,15 @@ Atunci când un client apelează la o Companie Imobiliară, un broker imobiliar 
                     <li class="elemente" id="elem-1">
                         <div class="oferte-opt">
                             <figure class="oferte-img">
+
                                 <a onclick="popUp(1)">
                                     <img src="imagini/imagehouse.jpg" alt="Casa Noua" />
                                 </a>
                             </figure>
                             <div class="oferte-continut">
                                 <div class="oferte-pret">
-                                   <strong>20,000 €</strong>
+                                    <strong>20,000 €</strong>
+                                    <button onclick="Toggle('btnf1')" id="btnf1" class="btn-favorite"><i class="fa-solid fa-heart"></i></button>
                                 </div>
                                 <h3 class="h3 oferte-titlu">
                                     <a onclick="popUp(1)">Casă de locuit or. Leova</a>
@@ -131,6 +137,8 @@ Atunci când un client apelează la o Companie Imobiliară, un broker imobiliar 
                                     <li class="oferte-info">
                                         <span><strong>0,1291</strong> Ha</span>
                                     </li>
+
+
                                 </ul>
                             </div>
                         </div>
@@ -146,6 +154,7 @@ Atunci când un client apelează la o Companie Imobiliară, un broker imobiliar 
                             <div class="oferte-continut">
                                 <div class="oferte-pret">
                                     <strong>SUPER OFERTĂ!!!</strong>
+                                    <button onclick="Toggle('btnf2')" id="btnf2" class="btn-favorite"><i class="fa-solid fa-heart"></i></button>
                                 </div>
                                 <h3 class="h3 oferte-titlu">
                                     <a onclick="popUp(2)">Magazin/cafenea</a>
@@ -175,6 +184,7 @@ Atunci când un client apelează la o Companie Imobiliară, un broker imobiliar 
                             <div class="oferte-continut">
                                 <div class="oferte-pret">
                                     <strong>10,000 €</strong>
+                                    <button onclick="Toggle('btnf3')" id="btnf3" class="btn-favorite"><i class="fa-solid fa-heart"></i></button>
                                 </div>
                                 <h3 class="h3 oferte-titlu">
                                     <a onclick="popUp(3)">Teren pentru construcții</a>
@@ -204,6 +214,7 @@ Atunci când un client apelează la o Companie Imobiliară, un broker imobiliar 
                             <div class="oferte-continut">
                                 <div class="oferte-pret">
                                     <strong>20,500 €</strong>
+                                    <button onclick="Toggle('btnf4')" id="btnf4" class="btn-favorite"><i class="fa-solid fa-heart"></i></button>
                                 </div>
                                 <h3 class="h3 oferte-titlu">
                                     <a onclick="popUp(4)">Teren pentru construcții</a>
@@ -233,6 +244,7 @@ Atunci când un client apelează la o Companie Imobiliară, un broker imobiliar 
                             <div class="oferte-continut">
                                 <div class="oferte-pret">
                                     <strong>10,500 €</strong>
+                                    <button onclick="Toggle('btnf5')" id="btnf5" class="btn-favorite"><i class="fa-solid fa-heart"></i></button>
                                 </div>
                                 <h3 class="h3 oferte-titlu">
                                     <a onclick="popUp(5)">Casă de locuit or. Leova</a>
@@ -260,6 +272,7 @@ Atunci când un client apelează la o Companie Imobiliară, un broker imobiliar 
                             <div class="oferte-continut">
                                 <div class="oferte-pret">
                                     <strong>75,000 €</strong>
+                                    <button onclick="Toggle('btnf6')" id="btnf6" class="btn-favorite"><i class="fa-solid fa-heart"></i></button>
                                 </div>
                                 <h3 class="h3 oferte-titlu">
                                     <a onclick="popUp(6)">Casă de locuit or. Leova</a>
@@ -287,6 +300,7 @@ Atunci când un client apelează la o Companie Imobiliară, un broker imobiliar 
                             <div class="oferte-continut">
                                 <div class="oferte-pret">
                                     <strong>6,200 €</strong>
+                                    <button onclick="Toggle('btnf7')" id="btnf7" class="btn-favorite"><i class="fa-solid fa-heart"></i></button>
                                 </div>
                                 <h3 class="h3 oferte-titlu">
                                     <a onclick="popUp(7)">Teren pentru construcții</a>
@@ -315,6 +329,7 @@ Atunci când un client apelează la o Companie Imobiliară, un broker imobiliar 
                             <div class="oferte-continut">
                                 <div class="oferte-pret">
                                     <strong>10,500 €</strong>
+                                    <button onclick="Toggle('btnf8')" id="btnf8" class="btn-favorite"><i class="fa-solid fa-heart"></i></button>
                                 </div>
                                 <h3 class="h3 oferte-titlu">
                                     <a onclick="popUp(8)">Teren pentru construcții</a>
@@ -345,6 +360,7 @@ Atunci când un client apelează la o Companie Imobiliară, un broker imobiliar 
                             <div class="oferte-continut">
                                 <div class="oferte-pret">
                                     <strong>3,000 €</strong>
+                                    <button onclick="Toggle('btnf9')" id="btnf9" class="btn-favorite"><i class="fa-solid fa-heart"></i></button>
                                 </div>
                                 <h3 class="h3 oferte-titlu">
                                     <a onclick="popUp(9)">Teren pentru construcții</a>
@@ -376,6 +392,7 @@ Atunci când un client apelează la o Companie Imobiliară, un broker imobiliar 
                             <div class="oferte-continut">
                                 <div class="oferte-pret">
                                     <strong>4,000 €</strong>
+                                    <button onclick="Toggle('btnf10')" id="btnf10" class="btn-favorite"><i class="fa-solid fa-heart"></i></button>
                                 </div>
                                 <h3 class="h3 oferte-titlu">
                                     <a onclick="popUp(10)">Teren pentru construcții</a>
@@ -403,6 +420,7 @@ Atunci când un client apelează la o Companie Imobiliară, un broker imobiliar 
                             <div class="oferte-continut">
                                 <div class="oferte-pret">
                                     <strong>3,500 €</strong>
+                                    <button onclick="Toggle('btnf11')" id="btnf11" class="btn-favorite"><i class="fa-solid fa-heart"></i></button>
                                 </div>
                                 <h3 class="h3 oferte-titlu">
                                     <a onclick="popUp(11)">Teren pentru construcții</a>
@@ -431,6 +449,7 @@ Atunci când un client apelează la o Companie Imobiliară, un broker imobiliar 
                             <div class="oferte-continut">
                                 <div class="oferte-pret">
                                     <strong>20,000 €</strong>
+                                    <button onclick="Toggle('btnf12')" id="btnf12" class="btn-favorite"><i class="fa-solid fa-heart"></i></button>
                                 </div>
                                 <h3 class="h3 oferte-titlu">
                                     <a onclick="popUp(12)">Casă de locuit or. Leova</a>
@@ -463,6 +482,7 @@ Atunci când un client apelează la o Companie Imobiliară, un broker imobiliar 
                             <div class="oferte-continut">
                                 <div class="oferte-pret">
                                     <strong>4,000 €</strong>
+                                    <button onclick="Toggle('btnf13')" id="btnf13" class="btn-favorite"><i class="fa-solid fa-heart"></i></button>
                                 </div>
                                 <h3 class="h3 oferte-titlu">
                                     <a onclick="popUp(13)">Teren pentru construcții</a>
@@ -494,6 +514,7 @@ Atunci când un client apelează la o Companie Imobiliară, un broker imobiliar 
                             <div class="oferte-continut">
                                 <div class="oferte-pret">
                                     <strong>9,000 €</strong>
+                                    <button onclick="Toggle('btnf14')" id="btnf14" class="btn-favorite"><i class="fa-solid fa-heart"></i></button>
                                 </div>
                                 <h3 class="h3 oferte-titlu">
                                     <a onclick="popUp(14)">Teren pentru construcții</a>
@@ -522,6 +543,7 @@ Atunci când un client apelează la o Companie Imobiliară, un broker imobiliar 
                             <div class="oferte-continut">
                                 <div class="oferte-pret">
                                     <strong>5,000 €</strong>
+                                    <button onclick="Toggle('btnf15')" id="btnf15" class="btn-favorite"><i class="fa-solid fa-heart"></i></button>
                                 </div>
                                 <h3 class="h3 oferte-titlu">
                                     <a onclick="popUp(15)">Teren pentru construcții </a>
@@ -554,6 +576,7 @@ Atunci când un client apelează la o Companie Imobiliară, un broker imobiliar 
                             <div class="oferte-continut">
                                 <div class="oferte-pret">
                                     <strong>18,000 €</strong>
+                                    <button onclick="Toggle('btnf16')" id="btnf16" class="btn-favorite"><i class="fa-solid fa-heart"></i></button>
                                 </div>
                                 <h3 class="h3 oferte-titlu">
                                     <a onclick="popUp(16)">Teren pentru construcții</a>
@@ -585,6 +608,7 @@ Atunci când un client apelează la o Companie Imobiliară, un broker imobiliar 
                             <div class="oferte-continut">
                                 <div class="oferte-pret">
                                     <strong>10,000 €</strong>
+                                    <button onclick="Toggle('btnf17')" id="btnf17" class="btn-favorite"><i class="fa-solid fa-heart"></i></button>
                                 </div>
                                 <h3 class="h3 oferte-titlu">
                                     <a onclick="popUp(17)">Teren pentru construcții</a>
@@ -612,6 +636,7 @@ Atunci când un client apelează la o Companie Imobiliară, un broker imobiliar 
                             <div class="oferte-continut">
                                 <div class="oferte-pret">
                                     <strong>10,000 €</strong>
+                                    <button onclick="Toggle('btnf18')" id="btnf18" class="btn-favorite"><i class="fa-solid fa-heart"></i></button>
                                 </div>
                                 <h3 class="h3 oferte-titlu">
                                     <a onclick="popUp(18)">Terenuri pentru construcție</a>
@@ -642,6 +667,7 @@ Atunci când un client apelează la o Companie Imobiliară, un broker imobiliar 
                             <div class="oferte-continut">
                                 <div class="oferte-pret">
                                     <strong>12,000 €</strong>
+                                    <button onclick="Toggle('btnf19')" id="btnf19" class="btn-favorite"><i class="fa-solid fa-heart"></i></button>
                                 </div>
                                 <h3 class="h3 oferte-titlu">
                                     <a onclick="popUp(19)">Casă de locuit în or. LEOVA</a>
@@ -670,6 +696,7 @@ Atunci când un client apelează la o Companie Imobiliară, un broker imobiliar 
                             <div class="oferte-continut">
                                 <div class="oferte-pret">
                                     <strong> 15,000 €</strong>
+                                    <button onclick="Toggle('btnf20')" id="btnf20" class="btn-favorite"><i class="fa-solid fa-heart"></i></button>
                                 </div>
                                 <h3 class="h3 oferte-titlu">
                                     <a onclick="popUp(20)">Teren pentru construcții</a>
@@ -689,6 +716,7 @@ Atunci când un client apelează la o Companie Imobiliară, un broker imobiliar 
                                 </ul>
                             </div>
                         </div>
+                    </li>    
                 </div>
                 <p><i class="arrow right" onclick="goRight()"></i></p>
             </ul>
@@ -835,7 +863,8 @@ Atunci când un client apelează la o Companie Imobiliară, un broker imobiliar 
 
                 <ul class="r-sociale-list">
                     <li>
-                        <a href="https://www.facebook.com/SOLIDIMOBIL?mibextid=ZbWKwL" target="_blank" class="r-sociale-link">
+                        <a href="https://www.facebook.com/SOLIDIMOBIL?mibextid=ZbWKwL" target="_blank"
+                            class="r-sociale-link">
                             <i class='bx bxl-facebook-square'></i>
                         </a>
                     </li>
@@ -883,7 +912,7 @@ Atunci când un client apelează la o Companie Imobiliară, un broker imobiliar 
 
         </div>
 
-        <div class="sectiune-copyright" >
+        <div class="sectiune-copyright">
             <div class="sectiune" id="data"></div>
         </div>
 
@@ -891,8 +920,8 @@ Atunci când un client apelează la o Companie Imobiliară, un broker imobiliar 
     <script src="js/data.js"></script>
     <script src="js/carosel.js"></script>
     <script>
-       AOS.init();
-      </script>
+        AOS.init();
+    </script>
 
 </body>
 

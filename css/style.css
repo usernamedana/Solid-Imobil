@@ -410,14 +410,17 @@ nav a {
 }
 
 .oferte-pret {
-    color: hsl(222, 36.04%, 43.53%);
     font-family: "Poppins", sans-serif;
     font-size: 0.813rem;
-    margin: 5px 0px;
+    margin: 2px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .oferte-pret strong {
-    font-size: 1.125rem;
+    color: hsl(222, 36.04%, 43.53%);
+    font-size: 1.2rem;
     font-weight: 600;
 }
 
@@ -474,6 +477,16 @@ nav a {
 .right {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
+}
+
+.btn-favorite {
+    background: transparent;
+    color: grey;
+    font-size: 25px;
+}
+
+.btn-favorite i:hover{
+    cursor: pointer;
 }
 
 
