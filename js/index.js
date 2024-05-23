@@ -188,6 +188,48 @@ function popUp(oferta) {
     }
   }
   
+  let photoPosition;
+  function player(n) {
+    const element = document.querySelector(".image-player-js");
+    if (n == 0) {
+      for (opacity = 1; opacity >= 0; opacity = opacity - 0.1) {
+        setTimeout(function () { element.style.opacity = opacity; }, 10)
+      }
+      document.body.style.overflow = "";
+      setTimeout(function () { element.classList.remove("player-show") }, 1000);
+    } else if (n == 1) {
+      photoPosition = 1;
+      document.querySelector(".player-image").src = document.querySelector(".pop-up-img-1").src;
+      element.classList.add("player-show");
+      for (opacity = 0; opacity < 1.1; opacity = opacity + 0.1) {
+        setTimeout(function () { element.style.opacity = opacity; }, 10)
+      }
+      document.body.style.overflow = "hidden";
+    } else if (n == 2) {
+      photoPosition = 2;
+      document.querySelector(".player-image").src = document.querySelector(".pop-up-img-2").src;
+      element.classList.add("player-show");
+      for (opacity = 0; opacity < 1.1; opacity = opacity + 0.1) {
+        setTimeout(function () { element.style.opacity = opacity; }, 10)
+      }
+      document.body.style.overflow = "hidden";
+    }
+  }
+  function playerGoLeft() {
+    photoPosition -= 1;
+    if (photoPosition == 0) {
+      photoPosition = 2;
+    }
+    document.querySelector(".player-image").src = document.querySelector(`.pop-up-img-${photoPosition}`).src;
+  }
+  function playerGoRight() {
+    photoPosition += 1;
+    if (photoPosition == 3) {
+      photoPosition = 1;
+    }
+    document.querySelector(".player-image").src = document.querySelector(`.pop-up-img-${photoPosition}`).src;
+  }
+
   function scrollFunction(location) {
     const element = document.querySelector(`.${location}`);
     element.scrollIntoView({ behavior: "smooth" });
