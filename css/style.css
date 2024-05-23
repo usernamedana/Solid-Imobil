@@ -155,11 +155,6 @@ nav a {
     color: hsl(222, 36.04%, 43.53%);
 }
 
-.login{
-    background-color: rgb(237,238,242);
-     border-radius: 10px;
-}
-
 #hamburger {
     color: rgb(0, 0, 0);
     font-size: 32px;
