@@ -42,7 +42,20 @@ Atunci când un client apelează la o Companie Imobiliară, un broker imobiliar 
     <!-- <script>
         alert('Proiectul este elaborat în cadrul concursului Tekwill Junior Ambassadors 2024')
     </script> -->
-
+    <div class="image-player-js">
+        <button class="exit-js" onclick="player(0)"><i class='bx bxs-x-circle'></i></button>
+        <div class="player-center">
+            <div class="player-center-left" onclick="playerGoLeft()">
+                <p><i class="arrow-player left"></i></p>
+            </div>
+            <div class="player-center-center">
+                <img class="player-image" src="" alt="image">
+            </div>
+            <div class="player-center-right" onclick="playerGoRight()">
+                <p><i class="arrow-player right"></i></p>
+            </div>
+        </div>
+    </div>
 
     <header class="meniu">
         <a href="#acasa"><img class="logo-ul" src="imagini/logo.png" alt="Solid Mobil logo"></a>
@@ -52,6 +65,7 @@ Atunci când un client apelează la o Companie Imobiliară, un broker imobiliar 
             <a href="#despre-noi" class="link-navigare">Despre Noi</a>
             <a href="#servicii" class="link-navigare">Servicii</a>
             <a href="#contacte" class="link-navigare">Contacte</a>
+            <a href="/pagini/login.html" class="link-navigare login">Login</a>
         </nav>
         <i id="hamburger" onclick="mobileMenu()" class="fas fa-bars"></i>
     </header>
@@ -90,8 +104,8 @@ Atunci când un client apelează la o Companie Imobiliară, un broker imobiliar 
             <div class="pop-up-js">
                 <button class="exit-js" onclick="popUp(0)"><i class='bx bxs-x-circle'></i></button>
                 <div class="pop-up-photos">
-                    <img class="pop-up-img-1" src="" alt="1">
-                    <img class="pop-up-img-2" src="" alt="2">
+                    <img class="pop-up-img-1" src="" alt="1" onclick="player(1)">
+                    <img class="pop-up-img-2" src="" alt="2" onclick="player(2)">
                 </div>
                 <div class="pop-up-bottom">
                     <div class="pop-up-bottom-left">
