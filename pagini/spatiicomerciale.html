@@ -18,6 +18,21 @@
 </head>
 
 <body>
+  <div class="image-player-js">
+    <button class="exit-js" onclick="player(0)"><i class='bx bxs-x-circle'></i></button>
+    <div class="player-center">
+        <div class="player-center-left" onclick="playerGoLeft()">
+            <p><i class="arrow-player left"></i></p>
+        </div>
+        <div class="player-center-center">
+            <img class="player-image" src="" alt="image">
+        </div>
+        <div class="player-center-right" onclick="playerGoRight()">
+            <p><i class="arrow-player right"></i></p>
+        </div>
+    </div>
+</div>
+
   <header class="meniu">
     <a href="../index.html#acasa"><img class="logo-ul" src="../imagini/logo.png" alt="Logo-ul" /></a>
     <nav class="BaraDeNavigare">
@@ -46,8 +61,8 @@
         <div class="pop-up-js o-pop-up">
           <button class="exit-js" onclick="popUp(0)"><i class='bx bxs-x-circle'></i></button>
           <div class="pop-up-photos">
-            <img class="pop-up-img-1" src="" alt="1" onclick="openPlayer(1)">
-            <img class="pop-up-img-2" src="" alt="2" onclick="openPlayer(2)">
+            <img class="pop-up-img-1" src="" alt="1" onclick="player(1)">
+            <img class="pop-up-img-2" src="" alt="2" onclick="player(2)">
           </div>
           <div class="pop-up-bottom">
             <div class="pop-up-bottom-left">
