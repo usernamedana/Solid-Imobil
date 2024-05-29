@@ -18,6 +18,7 @@ Atunci când un client apelează la o Companie Imobiliară, un broker imobiliar 
     <script type="text/javascript" src="js/email.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="js/favorite.js"></script>
+    <script type="text/javascript" src="js/firebase.js"></script>
 
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
@@ -65,7 +66,10 @@ Atunci când un client apelează la o Companie Imobiliară, un broker imobiliar 
             <a href="#despre-noi" class="link-navigare">Despre Noi</a>
             <a href="#servicii" class="link-navigare">Servicii</a>
             <a href="#contacte" class="link-navigare">Contacte</a>
-            <a href="/pagini/login.html" class="link-navigare login">Login</a>
+            <!-- <a href="/pagini/login.html" class="link-navigare login">Login</a> -->
+            <a id="postare-btn" href="creare.html" class="header-btn">Postează <i class="fas fa-plus"></i></a>
+            <a id="login-btn" class="header-btn">Log in <i class="fas fa-sign-in-alt"></i></a>
+            <a id="logout-btn" class="header-btn gray-btn">Log Out <i class="fas fa-sign-out-alt"></i></a>
         </nav>
         <i id="hamburger" onclick="mobileMenu()" class="fas fa-bars"></i>
     </header>
